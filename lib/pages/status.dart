@@ -25,7 +25,7 @@ class StatusPage extends StatelessWidget {
           //  TAREA
           // emitir: emitir-mensaje
           // { nombre: 'Flutter', mensaje: 'Hola desde Flutter' }
-          socketService.socket.emit(
+          socketService.emit(
             'emit-message',
             {'nombre': 'Flutter', 'mensaje': 'Hola desde Flutter'},
           );
